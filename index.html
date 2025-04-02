@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naval Ravikant: Top Podcasts & Ideas</title>
+    <title>Naval Ravikant: Top Quotes & Ideas</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,37 +15,18 @@
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
                     },
-                    aspectRatio: {
-                        '16/9': '16 / 9',
-                    },
                 }
             }
         }
     </script>
     <style type="text/tailwindcss">
-        @layer utilities {
-          /* Custom utility for aspect ratio if needed, though Tailwind aspect-ratio plugin usually handles this */
-          .aspect-w-16 { --tw-aspect-w: 16 }
-          .aspect-h-9 { --tw-aspect-h: 9 }
-          .aspect-ratio-box {
-            position: relative;
-            padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
-          }
-          .aspect-ratio-box > iframe {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-          }
-        }
         /* Basic body styling */
         body {
             @apply bg-gray-900 text-gray-100 font-sans antialiased;
         }
         /* Styling for blockquotes */
         blockquote {
-             @apply pl-4 border-l-4 border-blue-500 text-gray-300 italic my-2;
+             @apply pl-4 border-l-4 border-blue-500 text-gray-300 italic my-4 text-lg leading-relaxed; /* Added text-lg and leading-relaxed */
         }
     </style>
 </head>
@@ -54,157 +35,37 @@
     <div class="container mx-auto px-4 py-8 md:px-6 lg:px-8">
         <header class="text-center mb-12">
             <h1 class="text-3xl md:text-4xl font-bold text-white mb-2">Naval Ravikant</h1>
-            <p class="text-lg text-gray-400">Top Podcasts & Key Ideas</p>
+            <p class="text-lg text-gray-400">Top Quotes & Key Ideas</p>
         </header>
 
-        <main class="space-y-16">
-
-            <section>
-                <h2 class="text-xl font-semibold mb-4 text-blue-400">Joe Rogan Experience #1309</h2>
-                <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800">
-                    <iframe
-                        class="absolute inset-0 w-full h-full"
-                        src="https://www.youtube.com/embed/1-vcErOPofQ"
-                        title="Joe Rogan Experience #1309 - Naval Ravikant"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                <div class="mt-4 space-y-2">
-                    <blockquote>"Desire is a contract you make with yourself to be unhappy until you get what you want."</blockquote>
-                    <blockquote>"A calm mind, a fit body, a house full of love. These things cannot be bought, they must be earned."</blockquote>
-                    <blockquote>"The reality is life is a single-player game. You're born alone. You're going to die alone. All your interpretations are alone."</blockquote>
-                </div>
-            </section>
-
-            <section>
-                <h2 class="text-xl font-semibold mb-4 text-blue-400">How to Get Rich (Without Getting Lucky) - Full Series</h2>
-                <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800">
-                    <iframe
-                        class="absolute inset-0 w-full h-full"
-                        src="https://www.youtube.com/embed/1-TZqOsVCNM"
-                        title="Naval Ravikant - How to Get Rich: Every Episode"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                <div class="mt-4 space-y-2">
-                    <blockquote>"Seek wealth, not money or status. Wealth is having assets that earn while you sleep. Money is how we transfer time and wealth. Status is your place in the social hierarchy."</blockquote>
-                    <blockquote>"Arm yourself with specific knowledge, accountability, and leverage."</blockquote>
-                    <blockquote>"Specific knowledge is knowledge that you cannot be trained for. If society can train you, it can train someone else, and replace you."</blockquote>
-                    <blockquote>"Play long-term games with long-term people."</blockquote>
-                </div>
-            </section>
-
-            <section>
-                <h2 class="text-xl font-semibold mb-4 text-blue-400">The Tim Ferriss Show - The Angel Philosopher</h2>
-                <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800">
-                     <iframe
-                        class="absolute inset-0 w-full h-full"
-                        src="https://www.youtube.com/embed/HiYoCogKGuE"
-                        title="Naval Ravikant on The Tim Ferriss Show"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                <div class="mt-4 space-y-2">
-                    <blockquote>"Happiness is a choice and a skill you develop."</blockquote>
-                    <blockquote>"Read what you love until you love to read."</blockquote>
-                    <blockquote>"The most important skill for getting rich is becoming a perpetual learner."</blockquote>
-                </div>
-            </section>
-
-            <section>
-                <h2 class="text-xl font-semibold mb-4 text-blue-400">The Knowledge Project - Reading, Habits, Decision Making</h2>
-                 <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800">
-                    <iframe
-                        class="absolute inset-0 w-full h-full"
-                        src="https://www.youtube.com/embed/3QXCLqSOb1E"
-                        title="Naval Ravikant on The Knowledge Project"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                <div class="mt-4 space-y-2">
-                    <blockquote>"Understand the basics really well rather than memorizing advanced concepts."</blockquote>
-                    <blockquote>"Develop judgment through experience and learning from mistakes."</blockquote>
-                    <blockquote>"Build good habits as the foundation for a successful life."</blockquote>
-                </div>
-            </section>
-
-            <section>
-                <h2 class="text-xl font-semibold mb-4 text-blue-400">Farnam Street - Mental Models</h2>
-                 <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800">
-                    <iframe
-                        class="absolute inset-0 w-full h-full"
-                        src="https://www.youtube.com/embed/hmlaYmqt12I"
-                        title="Naval Ravikant on Mental Models"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                <div class="mt-4 space-y-2">
-                    <blockquote>"Reality is neutral. Your interpretation creates your experience."</blockquote>
-                    <blockquote>"Compound interest applies to relationships, knowledge, and wealth."</blockquote>
-                     <blockquote>"[Placeholder: Key takeaway about applying mental models for better decision making.]"</blockquote>
-                </div>
-            </section>
-
-             <section>
-                <h2 class="text-xl font-semibold mb-4 text-blue-400">Kapil Gupta Show - Seeking Truth</h2>
-                 <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800">
-                    <iframe
-                        class="absolute inset-0 w-full h-full"
-                        src="https://www.youtube.com/embed/ToT8fS4F2dg"
-                        title="Naval Ravikant on Kapil Gupta Show"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                <div class="mt-4 space-y-2">
-                     <blockquote>"[Placeholder: Key idea about the nature of truth and self-inquiry.]"</blockquote>
-                     <blockquote>"[Placeholder: Insight on detaching from outcomes.]"</blockquote>
-                </div>
-            </section>
-
-            <section>
-                <h2 class="text-xl font-semibold mb-4 text-blue-400">Placeholder Podcast Title 7</h2>
-                <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800 flex items-center justify-center text-gray-500">
-                    <span>Video Placeholder</span>
-                </div>
-                <div class="mt-4 space-y-2">
-                    <blockquote>"[Placeholder: Quote 1]"</blockquote>
-                    <blockquote>"[Placeholder: Quote 2]"</blockquote>
-                </div>
-            </section>
-
-            <section><h2 class="text-xl font-semibold mb-4 text-blue-400">Placeholder Podcast Title 8</h2><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800 flex items-center justify-center text-gray-500"><span>Video Placeholder</span></div><div class="mt-4 space-y-2"><blockquote>"[Placeholder: Quote]"</blockquote></div></section>
-            <section><h2 class="text-xl font-semibold mb-4 text-blue-400">Placeholder Podcast Title 9</h2><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800 flex items-center justify-center text-gray-500"><span>Video Placeholder</span></div><div class="mt-4 space-y-2"><blockquote>"[Placeholder: Quote]"</blockquote></div></section>
-            <section><h2 class="text-xl font-semibold mb-4 text-blue-400">Placeholder Podcast Title 10</h2><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800 flex items-center justify-center text-gray-500"><span>Video Placeholder</span></div><div class="mt-4 space-y-2"><blockquote>"[Placeholder: Quote]"</blockquote></div></section>
-            <section><h2 class="text-xl font-semibold mb-4 text-blue-400">Placeholder Podcast Title 11</h2><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800 flex items-center justify-center text-gray-500"><span>Video Placeholder</span></div><div class="mt-4 space-y-2"><blockquote>"[Placeholder: Quote]"</blockquote></div></section>
-            <section><h2 class="text-xl font-semibold mb-4 text-blue-400">Placeholder Podcast Title 12</h2><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800 flex items-center justify-center text-gray-500"><span>Video Placeholder</span></div><div class="mt-4 space-y-2"><blockquote>"[Placeholder: Quote]"</blockquote></div></section>
-            <section><h2 class="text-xl font-semibold mb-4 text-blue-400">Placeholder Podcast Title 13</h2><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800 flex items-center justify-center text-gray-500"><span>Video Placeholder</span></div><div class="mt-4 space-y-2"><blockquote>"[Placeholder: Quote]"</blockquote></div></section>
-            <section><h2 class="text-xl font-semibold mb-4 text-blue-400">Placeholder Podcast Title 14</h2><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800 flex items-center justify-center text-gray-500"><span>Video Placeholder</span></div><div class="mt-4 space-y-2"><blockquote>"[Placeholder: Quote]"</blockquote></div></section>
-            <section><h2 class="text-xl font-semibold mb-4 text-blue-400">Placeholder Podcast Title 15</h2><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800 flex items-center justify-center text-gray-500"><span>Video Placeholder</span></div><div class="mt-4 space-y-2"><blockquote>"[Placeholder: Quote]"</blockquote></div></section>
-            <section><h2 class="text-xl font-semibold mb-4 text-blue-400">Placeholder Podcast Title 16</h2><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800 flex items-center justify-center text-gray-500"><span>Video Placeholder</span></div><div class="mt-4 space-y-2"><blockquote>"[Placeholder: Quote]"</blockquote></div></section>
-            <section><h2 class="text-xl font-semibold mb-4 text-blue-400">Placeholder Podcast Title 17</h2><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800 flex items-center justify-center text-gray-500"><span>Video Placeholder</span></div><div class="mt-4 space-y-2"><blockquote>"[Placeholder: Quote]"</blockquote></div></section>
-            <section><h2 class="text-xl font-semibold mb-4 text-blue-400">Placeholder Podcast Title 18</h2><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800 flex items-center justify-center text-gray-500"><span>Video Placeholder</span></div><div class="mt-4 space-y-2"><blockquote>"[Placeholder: Quote]"</blockquote></div></section>
-            <section><h2 class="text-xl font-semibold mb-4 text-blue-400">Placeholder Podcast Title 19</h2><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800 flex items-center justify-center text-gray-500"><span>Video Placeholder</span></div><div class="mt-4 space-y-2"><blockquote>"[Placeholder: Quote]"</blockquote></div></section>
-            <section><h2 class="text-xl font-semibold mb-4 text-blue-400">Placeholder Podcast Title 20</h2><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800 flex items-center justify-center text-gray-500"><span>Video Placeholder</span></div><div class="mt-4 space-y-2"><blockquote>"[Placeholder: Quote]"</blockquote></div></section>
-
-
+        <main class="max-w-3xl mx-auto"> <blockquote>A fit body, a calm mind, a house full of love. These things cannot be bought - they must be earned.</blockquote>
+            <blockquote>Desire is a contract that you make with yourself to be unhappy until you get what you want.</blockquote>
+            <blockquote>Seek wealth, not money or status. Wealth is having assets that earn while you sleep. Money is how we transfer time and wealth. Status is your place in the social hierarchy.</blockquote>
+            <blockquote>Specific knowledge is knowledge that you cannot be trained for. If society can train you, it can train someone else, and replace you.</blockquote>
+            <blockquote>Specific knowledge is found much more by pursuing your innate talents, your genuine curiosity, and your passion.</blockquote>
+            <blockquote>Play long-term games with long-term people.</blockquote>
+            <blockquote>The measure of wealth is freedom. The measure of health is lightness. The measure of intellect is judgment. The measure of wisdom is silence. The measure of love is peace.</blockquote>
+            <blockquote>Choose the non-emotional response to any given situation and see how much easier your life becomes.</blockquote>
+            <blockquote>You won't have inner peace until you give up your war against the world.</blockquote>
+            <blockquote>People who live far below their means enjoy a freedom that people busy upgrading their lifestyles can't fathom.</blockquote>
+            <blockquote>Learn to sell, learn to build.</blockquote>
+            <blockquote>Read what you love until you love to read.</blockquote>
+            <blockquote>The smarter you get, the slower you read.</blockquote>
+            <blockquote>Escape competition through authenticity. No one can compete with you on being you.</blockquote>
+            <blockquote>Forty hour workweeks are a relic of the Industrial Age. Knowledge workers function like athletes — train and sprint, then rest and reassess.</blockquote>
+            <blockquote>The fundamental delusion — there is something out there that will make me happy and fulfilled forever.</blockquote>
+            <blockquote>Success is the enemy of learning. It can deprive you of the time and the incentive to start over.</blockquote>
+            <blockquote>A rational person can find peace by cultivating indifference to things outside of their control.</blockquote>
+            <blockquote>Simple heuristic: If you're evenly split on a difficult decision, take the path that's more painful in the short term.</blockquote>
+            <blockquote>Money doesn't buy happiness - it buys freedom.</blockquote>
+            <blockquote>A happy person isn't someone who's happy all the time. It's someone who effortlessly interprets events in such a way that they don't lose their innate peace.</blockquote>
+            <blockquote>The more seriously you take yourself, the unhappier you're going to be.</blockquote>
+            <blockquote>Life is a single player game. You're born alone. You're going to die alone. All your interpretations are alone.</blockquote>
+            <blockquote>The quality of your mind is the quality of your life.</blockquote>
+            <blockquote>To write a great book, you must first become the book.</blockquote>
+            <blockquote>If you can't see yourself working with someone for life, don't work with them for a day.</blockquote>
+            <blockquote>Information is everywhere but its meaning is created by the observer that interprets it. Meaning is relative and there is no objective, over-arching meaning.</blockquote>
+            <blockquote>Technology is not only the thing that moves the human race forward, but it's the only thing that ever has. Without technology, we're just monkeys playing in the dirt.</blockquote>
         </main>
 
         <footer class="text-center mt-16 py-4 border-t border-gray-700">
@@ -215,4 +76,6 @@
 
 </body>
 </html>
+
+
 
