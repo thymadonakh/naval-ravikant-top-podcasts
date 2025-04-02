@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naval Ravikant: Top Podcasts & Ideas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    aspectRatio: {
+                        '16/9': '16 / 9',
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          /* Custom utility for aspect ratio if needed, though Tailwind aspect-ratio plugin usually handles this */
+          .aspect-w-16 { --tw-aspect-w: 16 }
+          .aspect-h-9 { --tw-aspect-h: 9 }
+          .aspect-ratio-box {
+            position: relative;
+            padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+          }
+          .aspect-ratio-box > iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+          }
+        }
+        /* Basic body styling */
+        body {
+            @apply bg-gray-900 text-gray-100 font-sans antialiased;
+        }
+        /* Styling for blockquotes */
+        blockquote {
+             @apply pl-4 border-l-4 border-blue-500 text-gray-300 italic my-2;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+    <div class="container mx-auto px-4 py-8 md:px-6 lg:px-8">
+        <header class="text-center mb-12">
+            <h1 class="text-3xl md:text-4xl font-bold text-white mb-2">Naval Ravikant</h1>
+            <p class="text-lg text-gray-400">Top Podcasts & Key Ideas</p>
+        </header>
+
+        <main class="space-y-16">
+
+            <section>
+                <h2 class="text-xl font-semibold mb-4 text-blue-400">Joe Rogan Experience #1309</h2>
+                <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800">
+                    <iframe
+                        class="absolute inset-0 w-full h-full"
+                        src="https://www.youtube.com/embed/1-vcErOPofQ"
+                        title="Joe Rogan Experience #1309 - Naval Ravikant"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="mt-4 space-y-2">
+                    <blockquote>"Desire is a contract you make with yourself to be unhappy until you get what you want."</blockquote>
+                    <blockquote>"A calm mind, a fit body, a house full of love. These things cannot be bought, they must be earned."</blockquote>
+                    <blockquote>"The reality is life is a single-player game. You're born alone. You're going to die alone. All your interpretations are alone."</blockquote>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-semibold mb-4 text-blue-400">How to Get Rich (Without Getting Lucky) - Full Series</h2>
+                <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800">
+                    <iframe
+                        class="absolute inset-0 w-full h-full"
+                        src="https://www.youtube.com/embed/1-TZqOsVCNM"
+                        title="Naval Ravikant - How to Get Rich: Every Episode"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="mt-4 space-y-2">
+                    <blockquote>"Seek wealth, not money or status. Wealth is having assets that earn while you sleep. Money is how we transfer time and wealth. Status is your place in the social hierarchy."</blockquote>
+                    <blockquote>"Arm yourself with specific knowledge, accountability, and leverage."</blockquote>
+                    <blockquote>"Specific knowledge is knowledge that you cannot be trained for. If society can train you, it can train someone else, and replace you."</blockquote>
+                    <blockquote>"Play long-term games with long-term people."</blockquote>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-semibold mb-4 text-blue-400">The Tim Ferriss Show - The Angel Philosopher</h2>
+                <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800">
+                     <iframe
+                        class="absolute inset-0 w-full h-full"
+                        src="https://www.youtube.com/embed/HiYoCogKGuE"
+                        title="Naval Ravikant on The Tim Ferriss Show"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="mt-4 space-y-2">
+                    <blockquote>"Happiness is a choice and a skill you develop."</blockquote>
+                    <blockquote>"Read what you love until you love to read."</blockquote>
+                    <blockquote>"The most important skill for getting rich is becoming a perpetual learner."</blockquote>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-semibold mb-4 text-blue-400">The Knowledge Project - Reading, Habits, Decision Making</h2>
+                 <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800">
+                    <iframe
+                        class="absolute inset-0 w-full h-full"
+                        src="https://www.youtube.com/embed/3QXCLqSOb1E"
+                        title="Naval Ravikant on The Knowledge Project"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="mt-4 space-y-2">
+                    <blockquote>"Understand the basics really well rather than memorizing advanced concepts."</blockquote>
+                    <blockquote>"Develop judgment through experience and learning from mistakes."</blockquote>
+                    <blockquote>"Build good habits as the foundation for a successful life."</blockquote>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-semibold mb-4 text-blue-400">Farnam Street - Mental Models</h2>
+                 <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800">
+                    <iframe
+                        class="absolute inset-0 w-full h-full"
+                        src="https://www.youtube.com/embed/hmlaYmqt12I"
+                        title="Naval Ravikant on Mental Models"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="mt-4 space-y-2">
+                    <blockquote>"Reality is neutral. Your interpretation creates your experience."</blockquote>
+                    <blockquote>"Compound interest applies to relationships, knowledge, and wealth."</blockquote>
+                     <blockquote>"[Placeholder: Key takeaway about applying mental models for better decision making.]"</blockquote>
+                </div>
+            </section>
+
+             <section>
+                <h2 class="text-xl font-semibold mb-4 text-blue-400">Kapil Gupta Show - Seeking Truth</h2>
+                 <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800">
+                    <iframe
+                        class="absolute inset-0 w-full h-full"
+                        src="https://www.youtube.com/embed/ToT8fS4F2dg"
+                        title="Naval Ravikant on Kapil Gupta Show"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="mt-4 space-y-2">
+                     <blockquote>"[Placeholder: Key idea about the nature of truth and self-inquiry.]"</blockquote>
+                     <blockquote>"[Placeholder: Insight on detaching from outcomes.]"</blockquote>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-semibold mb-4 text-blue-400">Placeholder Podcast Title 7</h2>
+                <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800 flex items-center justify-center text-gray-500">
+                    <span>Video Placeholder</span>
+                </div>
+                <div class="mt-4 space-y-2">
+                    <blockquote>"[Placeholder: Quote 1]"</blockquote>
+                    <blockquote>"[Placeholder: Quote 2]"</blockquote>
+                </div>
+            </section>
+
+            <section><h2 class="text-xl font-semibold mb-4 text-blue-400">Placeholder Podcast Title 8</h2><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800 flex items-center justify-center text-gray-500"><span>Video Placeholder</span></div><div class="mt-4 space-y-2"><blockquote>"[Placeholder: Quote]"</blockquote></div></section>
+            <section><h2 class="text-xl font-semibold mb-4 text-blue-400">Placeholder Podcast Title 9</h2><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800 flex items-center justify-center text-gray-500"><span>Video Placeholder</span></div><div class="mt-4 space-y-2"><blockquote>"[Placeholder: Quote]"</blockquote></div></section>
+            <section><h2 class="text-xl font-semibold mb-4 text-blue-400">Placeholder Podcast Title 10</h2><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800 flex items-center justify-center text-gray-500"><span>Video Placeholder</span></div><div class="mt-4 space-y-2"><blockquote>"[Placeholder: Quote]"</blockquote></div></section>
+            <section><h2 class="text-xl font-semibold mb-4 text-blue-400">Placeholder Podcast Title 11</h2><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800 flex items-center justify-center text-gray-500"><span>Video Placeholder</span></div><div class="mt-4 space-y-2"><blockquote>"[Placeholder: Quote]"</blockquote></div></section>
+            <section><h2 class="text-xl font-semibold mb-4 text-blue-400">Placeholder Podcast Title 12</h2><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800 flex items-center justify-center text-gray-500"><span>Video Placeholder</span></div><div class="mt-4 space-y-2"><blockquote>"[Placeholder: Quote]"</blockquote></div></section>
+            <section><h2 class="text-xl font-semibold mb-4 text-blue-400">Placeholder Podcast Title 13</h2><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800 flex items-center justify-center text-gray-500"><span>Video Placeholder</span></div><div class="mt-4 space-y-2"><blockquote>"[Placeholder: Quote]"</blockquote></div></section>
+            <section><h2 class="text-xl font-semibold mb-4 text-blue-400">Placeholder Podcast Title 14</h2><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800 flex items-center justify-center text-gray-500"><span>Video Placeholder</span></div><div class="mt-4 space-y-2"><blockquote>"[Placeholder: Quote]"</blockquote></div></section>
+            <section><h2 class="text-xl font-semibold mb-4 text-blue-400">Placeholder Podcast Title 15</h2><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800 flex items-center justify-center text-gray-500"><span>Video Placeholder</span></div><div class="mt-4 space-y-2"><blockquote>"[Placeholder: Quote]"</blockquote></div></section>
+            <section><h2 class="text-xl font-semibold mb-4 text-blue-400">Placeholder Podcast Title 16</h2><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800 flex items-center justify-center text-gray-500"><span>Video Placeholder</span></div><div class="mt-4 space-y-2"><blockquote>"[Placeholder: Quote]"</blockquote></div></section>
+            <section><h2 class="text-xl font-semibold mb-4 text-blue-400">Placeholder Podcast Title 17</h2><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800 flex items-center justify-center text-gray-500"><span>Video Placeholder</span></div><div class="mt-4 space-y-2"><blockquote>"[Placeholder: Quote]"</blockquote></div></section>
+            <section><h2 class="text-xl font-semibold mb-4 text-blue-400">Placeholder Podcast Title 18</h2><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800 flex items-center justify-center text-gray-500"><span>Video Placeholder</span></div><div class="mt-4 space-y-2"><blockquote>"[Placeholder: Quote]"</blockquote></div></section>
+            <section><h2 class="text-xl font-semibold mb-4 text-blue-400">Placeholder Podcast Title 19</h2><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800 flex items-center justify-center text-gray-500"><span>Video Placeholder</span></div><div class="mt-4 space-y-2"><blockquote>"[Placeholder: Quote]"</blockquote></div></section>
+            <section><h2 class="text-xl font-semibold mb-4 text-blue-400">Placeholder Podcast Title 20</h2><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg bg-gray-800 flex items-center justify-center text-gray-500"><span>Video Placeholder</span></div><div class="mt-4 space-y-2"><blockquote>"[Placeholder: Quote]"</blockquote></div></section>
+
+
+        </main>
+
+        <footer class="text-center mt-16 py-4 border-t border-gray-700">
+            <p class="text-gray-500 text-sm">Curated Collection | Design by AI</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+
